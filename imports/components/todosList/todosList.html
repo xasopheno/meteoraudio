@@ -1,0 +1,31 @@
+<header>
+<!--     <form class="new-task" ng-submit="$ctrl.addTask($ctrl.newTask)">
+    <input ng-model="$ctrl.newTask" type="text" name="text" placeholder="Type to add new tasks"/>
+  </form> -->
+
+  </header>
+
+ <center>
+<h2>xoxo Meteor and WebAudio xoxo</h2>
+<ul>
+  <li ng-repeat="task in $ctrl.tasks" ng-class="{'checked': task.checked}">
+<!--     <button class="delete" ng-click="$ctrl.removeTask(task)">&times;</button>
+  -->
+
+  <button onclick="start()">start</button>
+<button onclick="stop()">stop</button>
+<br>
+    <button class="inc" ng-click="$ctrl.incTask(task)">UP</button>
+    <button class="dec" ng-click="$ctrl.decTask(task)">DN</button>
+
+
+
+<!--     <input type="checkbox" ng-checked="task.checked" ng-click="$ctrl.setChecked(task)" class="toggle-checked"/> -->
+ 
+    <span class="text">
+      {{task.text}}
+      {{task.createdAt}}
+    </span>
+  </li>
+</ul>
+</center>
