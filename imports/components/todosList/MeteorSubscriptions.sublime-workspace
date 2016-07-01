@@ -1,0 +1,545 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"start",
+				"startOsc"
+			],
+			[
+				"star",
+				"startOsc"
+			],
+			[
+				"task",
+				"task"
+			],
+			[
+				"turnNum",
+				"turnNum{{video	(home.html)"
+			],
+			[
+				"turn",
+				"turnState"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"eee",
+				"eee"
+			],
+			[
+				"border-top",
+				"border-top-style"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"cont",
+				"content-editor"
+			],
+			[
+				"template",
+				"templateUrl"
+			],
+			[
+				"home",
+				"HomeCtrl"
+			],
+			[
+				"list-style",
+				"list-style-type"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"dc",
+				"dc"
+			],
+			[
+				"Sign",
+				"SignUp"
+			],
+			[
+				"form",
+				"form"
+			],
+			[
+				"SignUp",
+				"SignUpForm"
+			],
+			[
+				"Signup",
+				"SignUpAdmin"
+			],
+			[
+				"aut",
+				"auto_now"
+			],
+			[
+				"auto_",
+				"auto_now_add"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 279.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Package Control: ip",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/dannymeyer/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/dannymeyer/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/client/main.html",
+		"/Users/dannymeyer/Downloads/sine.py",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/client/osc.html",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/server/main.js",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/client/main.js",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/client/osc.js",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/client/shared.js",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/client/oscillator-sample.js",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/client/main.css",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/imports/componants/todoList/todoList.html",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/imports/components/todosList/todosList.html",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/imports/components/todosList/todosList.js",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/imports/api/tasks.js",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/imports/componants/todoList/todoList.js",
+		"/Users/dannymeyer/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/dannymeyer/Documents/projects/meteor/simple-todos/package.json",
+		"/Users/dannymeyer/projects/Sharechess/routes/turnState.js",
+		"/Users/dannymeyer/projects/Sharechess/public/javascripts/sharechess.js",
+		"/Users/dannymeyer/projects/Sharechess/public/partials/home.html",
+		"/Users/dannymeyer/Documents/NoSQL/Lynda/Querying Schema-free Data/Reducing Data/restaurant.couch",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/public/partials/disc-text.ejs",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/models/user.js",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/config/passport.js",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/config/database.js",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/app/routes.js",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/public/font-awesome/css/font-awesome.min.css",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/public/javascripts/arrow.js",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/public/javascripts/vidzy.js",
+		"/Users/dannymeyer/Documents/node/NODEMARIOTT1/MarProd/public/partials/la.ejs",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/server.js",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/views/login.ejs",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/routes/index.js",
+		"/Users/dannymeyer/Documents/node/passport/app/models/user.js",
+		"/Users/dannymeyer/Documents/node/passport/config/database.js",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/procfile",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/package.json",
+		"/Users/dannymeyer/Documents/node/bossable/mean/bower.json",
+		"/Users/dannymeyer/Documents/node/bossable/mean/config/env/development.js",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/views/index.jade",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/public/partials/navbar.html",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/public/stylesheets/custom.css",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/public/partials/navbar.jade.html",
+		"/Users/dannymeyer/Documents/node/nodemariott1/Vidzy/views/navbar.jade",
+		"/Users/dannymeyer/Documents/node/udemy/Vidzy/public/javascripts/vidzy.js",
+		"/Users/dannymeyer/Documents/node/contactlistapp/public/controllers/controller.js",
+		"/Users/dannymeyer/Documents/node/udemy/Vidzy/public/partials/countertest.html",
+		"/Users/dannymeyer/Documents/node/udemy/Vidzy/public/stylesheets/style.css",
+		"/Users/dannymeyer/Documents/node/udemy/Vidzy/public/partials/ShareChess.sublime-project",
+		"/Users/dannymeyer/Documents/node/udemy/facepalm.html",
+		"/Users/dannymeyer/Documents/node/udemy/Vidzy/views/layout.jade",
+		"/Users/dannymeyer/Documents/Homework/angular/Building Backend/index.html",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/templates/fadefadefade.html",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/templates/base.html",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/static_in_pro/our_static/css/custom.css",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/templates/head.html",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/marriott/wsgi.py",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/templates/js.html",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/templates/WHAHAHAT.html",
+		"/Users/dannymeyer/Desktop/checkitout",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/.gitignore",
+		"/Users/dannymeyer/Documents/Django/marriott_deploy/marriott/settings.py",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/berlin.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/blank_city.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/australia.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/lisbon.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/la.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/head.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/static_in_pro/our_static/css/bootstrap.css",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/static_in_pro/our_static/css/custom.css",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/newyork.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/base.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/navbar.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/marriott/views.py",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/marriott/urls.py",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/requirements.txt",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/.ebextensions/01-django_eb.config",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/.elasticbeanstalk/Marriott-dev.env.yml",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/js.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/static_in_pro/our_static/css/1-col-portfolio.css",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/test.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/static_in_pro/our_static/css/bootstrap.min.css",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/mexico.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/barcelona.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/newsletter/views.py",
+		"/Users/dannymeyer/Desktop/startbootstrap-landing-page-1.0.4/js/bootstrap.min.js",
+		"/Users/dannymeyer/Desktop/startbootstrap-landing-page-1.0.4/js/bootstrap.js",
+		"/Users/dannymeyer/Desktop/startbootstrap-landing-page-1.0.4/js/jquery.js",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/marriott/settings.py",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/neworleans.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/japan.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/dc.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/colorado.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/chicago.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/New York.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/New Orleans.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/Mexico.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/Lisbon.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/Japan.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/D.C.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/Colorado.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/Chicago.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/Berlin.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/Barcelona.html",
+		"/Users/dannymeyer/Documents/Django/Marriott/src/templates/Australia.html",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/marriott/__init__.py",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/newsletter/views.py",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/mariott/views.py",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/newsletter/forms.py",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/newsletter/admin.py",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/newsletter/models.py",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/newsletter/templates/home.html",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/mariott/settings.py",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/templates/navbar.html",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/templates/LA.html",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/templates/base.html",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/mariott/urls.py",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/static_in_pro/our_static/base.html",
+		"/Users/dannymeyer/Documents/Django/Mariott/src/static_in_pro/static_root/example.txt",
+		"/Users/dannymeyer/Desktop/DJMLC_Marriott/New York.html",
+		"/Users/dannymeyer/Desktop/DJMLC_Marriott/css/stylesheet.css",
+		"/Users/dannymeyer/Desktop/DJMLC_Marriott/Marriot_12_3_15.html",
+		"/Users/dannymeyer/Documents/TIA/backup/Folder/src/templates/head_css.html",
+		"/Users/dannymeyer/Documents/TIA/Folder/src/static_in_pro/our_static/css/mobile.css",
+		"/Users/dannymeyer/Documents/TIA/Folder/src/templates/WSC",
+		"/Users/dannymeyer/Documents/TIA/backup/Folder/src/templates/Old Interviews.html",
+		"/Users/dannymeyer/Documents/TIA/Folder/src/templates/WSC.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Users/dannymeyer/Documents/Django/Marriott/src",
+			"/Users/dannymeyer/Documents/Django/Marriott/src/templates",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"command",
+			"reindent",
+			"})",
+			"bool",
+			"$scope.video",
+			"x",
+			"heroku",
+			"btn",
+			"b",
+			"button",
+			"open sans",
+			"open",
+			"font",
+			"c1a",
+			"brand",
+			"indent",
+			"asdf3a",
+			"p",
+			"margin",
+			"font-size",
+			"asdf2",
+			"asdf5",
+			".5em",
+			"p",
+			"show-me",
+			"\n ",
+			"img",
+			"40",
+			"35",
+			"nav",
+			".col-lg-12",
+			"ul",
+			">\n",
+			"headtext",
+			"indenttext",
+			"padding-right",
+			"padding",
+			"16by9",
+			"16",
+			"@media",
+			"session",
+			"password",
+			"app.router",
+			"logout",
+			"index.js",
+			"isLoggedIn",
+			"router",
+			"http",
+			"config",
+			"api",
+			"home",
+			"0",
+			"link",
+			"code",
+			"}\n",
+			"userlist",
+			");\n",
+			"btn-lg",
+			"margin",
+			"full",
+			"font-size",
+			"headtext",
+			"z",
+			"dropdown-toggle",
+			"z",
+			"transform",
+			"brand",
+			"navtext",
+			"navtet",
+			"dropdown",
+			"center",
+			"four",
+			"nav",
+			"verlag",
+			"wsgi",
+			"three",
+			"two",
+			"fluid",
+			"body",
+			".navbar",
+			"padding",
+			"brand",
+			"page-header",
+			"80",
+			"hr",
+			"navbar-toggle",
+			"navtext",
+			"ul",
+			"navbar",
+			"fff",
+			"ffffff",
+			"333",
+			"hover",
+			"link-hover-color",
+			"navbar-default-link-hover-color",
+			"@navbar-default-link-hover-color",
+			"navbar",
+			"static-top",
+			"nav",
+			"body",
+			"body-bg",
+			"@body-bg",
+			"body-bg",
+			"body",
+			"fixed",
+			"nav-fixed-top",
+			"nav",
+			"body",
+			"mariott",
+			"marriott",
+			"footer",
+			"right",
+			"nav",
+			"display",
+			"nav",
+			"thisis",
+			"home",
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"five\n<!-- ARTIST FOUR -->\n<!-- Artist Four Video -->\n{% block artist_four_video %}https://www.youtube.com/embed/D6YWvNA8D4c{% endblock %}\n<!-- Artist Four BIO -->\n<!-- Artist Four Name -->\n{% block artist_four_name %}Kelsey Lu{% endblock %}\n<!-- Artist Four Description -->\n{% block artist_four_description %}More Than Just A Cellist{% endblock %}\n<!-- Artist  Text -->\n{% block artist_four_text %}Born in North Carolina, and currently residing in New York City, Kelsey Lu is a more than just a Cellist. After growing up playing/living in the confines of the conservatively classical southern religious world and then studying at The Conservatory of North Carolina School of The Arts, this singer/songwriter now stretches and bends the walls of conformity by creating a dimension of her own for others to experience. Her live performances now consist of her playing her cello through a loop pedal creating melodic layers of transcendence. Along with touring the country for two years singing with Grammy Award Winning group Nappy Roots, she has performed her original compositions in such places as the Lincoln Center, The Whitney Museum and a whole host of other galleries & venues.{% endblock %}",
+			"\n<!-- ARTIST FOUR -->\n<!-- Artist Four Video -->\n{% block artist_four_video %}https://www.youtube.com/embed/D6YWvNA8D4c{% endblock %}\n<!-- Artist Four BIO -->\n<!-- Artist Four Name -->\n{% block artist_four_name %}Kelsey Lu{% endblock %}\n<!-- Artist Four Description -->\n{% block artist_four_description %}More Than Just A Cellist{% endblock %}\n<!-- Artist  Text -->\n{% block artist_four_text %}Born in North Carolina, and currently residing in New York City, Kelsey Lu is a more than just a Cellist. After growing up playing/living in the confines of the conservatively classical southern religious world and then studying at The Conservatory of North Carolina School of The Arts, this singer/songwriter now stretches and bends the walls of conformity by creating a dimension of her own for others to experience. Her live performances now consist of her playing her cello through a loop pedal creating melodic layers of transcendence. Along with touring the country for two years singing with Grammy Award Winning group Nappy Roots, she has performed her original compositions in such places as the Lincoln Center, The Whitney Museum and a whole host of other galleries & venues.{% endblock %}",
+			"five",
+			"<!-- ARTIST Four -->\n<!-- Artist Four Video -->\n{% block artist_four %}\n        <div class=\"row\">\n            <div class=\"col-md-7\">\n            <div class=\"embed-responsive embed-responsive-16by9\">\n            <iframe class=\"embed-responsive-item\" src=\"{% block artist_four_video %}{{ artist_four_video }}{% endblock %}\"></iframe>\n            </div>\n        </div>\n<!-- Artist Four BIO -->\n            <div class=\"col-md-5\">\n                <h3>{% block artist_four_name %}{{ artist_four_name }}{% endblock %}</h3>\n                <h4>{% block artist_four_description %}{{ artist_four_description }}{% endblock %}</h4>\n                <p>{% block artist_four_text %}{{ artist_four_text }}{% endblock %}</p>\n            </div>\n        </div>\n      </div>\n\n    <hr><!-- line -->       \n    <!-- /.container -->\n{% endblock %}",
+			"four",
+			"three"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true
+}

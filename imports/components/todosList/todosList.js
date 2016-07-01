@@ -7,87 +7,118 @@ import template from './todosList.html';
 class TodosListCtrl {
   constructor($scope) {
     $scope.viewModel(this);
- 
-    var ctx = new AudioContext();
-    var osc = null; 
-
-    function startOsc(bool) {
-    if(bool === undefined) bool = true;
-    if(osc === undefined) osc = null;
-    if(bool === true) {
-      if (osc === null) {
-    osc = ctx.createOscillator();
-        osc.frequency.value = 250;
-
-        osc.start(ctx.currentTime);
-        osc.connect(ctx.destination);
-      }
-    } else {
-      if (osc != null) {
-    osc.stop(ctx.currentTime);
-        osc.disconnect(ctx.destination);
-        osc = null;
-    }
-  }
-}
-    start = function() {
-       startOsc(); 
-    };
-    stop = function() {
-       startOsc(false); 
-    };
 
     this.helpers({
       tasks() {
         return Tasks.find({}, {
-          sort: {
-            createdAt: -1
-          }
+
         });
       }
     })
-  }
 
-  addTask(newTask) {
-    // Insert a task into the collection
-    Tasks.insert({
-      text: newTask,
-      createdAt: new Date
-    });    
-    // Clear form
-    this.newTask = '';
-  }
+    angular.element(document).ready(function () {
 
+      setTimeout(function(){
+    console.log('ready');
+    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+    test = !test
+      init();
+}, 2000);
 
-  
-  setChecked(task) {
-    // Set the checked property to the opposite of its current value
-    Tasks.update(task._id, {
-      $set: {
-        checked: !task.checked
-      },
     });
-  }
-    
-  removeTask(task) {
-    Tasks.remove(task._id);
-  }
 
-    incTask(task) {
-      test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
-      if (test === false) {
-      Tasks.update({_id : "EbuGDM5Hwx6k2u7z3"},{$set:{createdAt : true}});
-      console.log(test);
+    var ctx = new AudioContext();
+    var osc; 
+    var test; 
+    function startOsc(bool) {
+      console.log('startOsc');
+      if(bool === undefined) bool = test;
+      if(osc === undefined) osc = null;
+      if(bool === false) {
+        if (osc === null) {
+          osc = ctx.createOscillator();
+          osc.frequency.value = 250;
+          osc.start(ctx.currentTime);
+          osc.connect(ctx.destination);
+        }
+      } else {
+        if (osc != null) {
+          osc.stop(ctx.currentTime);
+          osc.disconnect(ctx.destination);
+          osc = null;
+        }
+      }
     }
-  }
-
-    decTask(task) {
+    start = function() {
       test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
-      if (test === true) {
-      Tasks.update({_id : "EbuGDM5Hwx6k2u7z3"},{$set:{createdAt : false}});
-      console.log(test);
+      if (test === false){
+    // startOsc(test); 
+    Tasks.update({_id : "EbuGDM5Hwx6k2u7z3"},{$set:{createdAt : true}});
+    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+    console.log('on');
+  } else {
+     // startOsc(test);
+     Tasks.update({_id : "EbuGDM5Hwx6k2u7z3"},{$set:{createdAt : false}});
+     test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+     console.log('off');
+   }
+
+ };
+
+//     var ctx = new AudioContext();
+//     var osc = null; 
+
+//     function initOsc(bool) {
+//     if(bool === undefined) bool = test;
+//     if(osc === undefined) osc = null;
+//     if(bool === true) {
+//       if (osc === null) {
+//     osc = ctx.createOscillator();
+//         osc.frequency.value = 250;
+
+//         osc.start(ctx.currentTime);
+//         osc.connect(ctx.destination);
+//       }
+//     } else {
+//       if (osc != null) {
+//     osc.stop(ctx.currentTime);
+//         osc.disconnect(ctx.destination);
+//         osc = null;
+//     }
+//   }
+// }
+    init = function() {
+       startOsc(); 
+    };
+
+ Tasks.find().observeChanges({
+   changed: function (id, fields) {
+    startOsc(test);
+    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+    console.log("mongodb listener");
   }
+})
 }
+
+
+
+ // addTask(newTask) {
+
+ //    Tasks.insert({
+ //      text: newTask,
+ //      createdAt: new Date
+ //    });    
+
+ //    this.newTask = '';
+ //  }
+
+ //  incTask(task) {
+
+ //  }
+
+ //  removeTask(task) {
+ //    Tasks.remove(task._id);
+  // }
 }
 
 
