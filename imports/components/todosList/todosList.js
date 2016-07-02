@@ -37,7 +37,7 @@ class TodosListCtrl {
       if(bool === false) {
         if (osc === null) {
           osc = ctx.createOscillator();
-          osc.frequency.value = 250;
+          osc.frequency.value = 250 + Math.floor(Math.random() * 150) + 1;
           osc.start(ctx.currentTime);
           osc.connect(ctx.destination);
         }
