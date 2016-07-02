@@ -16,42 +16,45 @@ class TodosListCtrl {
       }
     })
 
-    angular.element(document).ready(function () {
+var AudioContext = window.AudioContext // Default
+    || window.webkitAudioContext // Safari and old versions of Chrome
+    || false; 
 
-      setTimeout(function(){
-    console.log('ready');
-    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
-    test = !test
-      init();
-}, 2000);
+    if (AudioContext) {
+    // Do whatever you want using the Web Audio API
+    var ctx = new AudioContext;
+    // ...
+  } else {
+    // Web Audio API is not supported
+    // Alert the user
+    alert("Sorry, but the Web Audio API is not supported by your browser. Please, consider upgrading to the latest version or downloading Google Chrome or Mozilla Firefox");
+  }
 
-    });
-
-    var ctx = new AudioContext();
-    var osc; 
-    var test; 
-    function startOsc(bool) {
-      console.log('startOsc');
-      if(bool === undefined) bool = test;
-      if(osc === undefined) osc = null;
-      if(bool === false) {
-        if (osc === null) {
-          osc = ctx.createOscillator();
-          osc.frequency.value = 250 + Math.floor(Math.random() * 150) + 1;
-          osc.start(ctx.currentTime);
-          osc.connect(ctx.destination);
-        }
-      } else {
-        if (osc != null) {
-          osc.stop(ctx.currentTime);
-          osc.disconnect(ctx.destination);
-          osc = null;
-        }
+  // var ctx = new AudioContext();
+  var osc; 
+  var test; 
+  function startOsc(bool) {
+    console.log('startOsc');
+    if(bool === undefined) bool = test;
+    if(osc === undefined) osc = null;
+    if(bool === false) {
+      if (osc === null) {
+        osc = ctx.createOscillator();
+        osc.frequency.value = 250 + Math.floor(Math.random() * 150) + 1;
+        osc.start(ctx.currentTime);
+        osc.connect(ctx.destination);
+      }
+    } else {
+      if (osc != null) {
+        osc.stop(ctx.currentTime);
+        osc.disconnect(ctx.destination);
+        osc = null;
       }
     }
-    start = function() {
-      test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
-      if (test === false){
+  }
+  start = function() {
+    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+    if (test === false){
     // startOsc(test); 
     Tasks.update({_id : "EbuGDM5Hwx6k2u7z3"},{$set:{createdAt : true}});
     test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
@@ -87,40 +90,51 @@ class TodosListCtrl {
 //     }
 //   }
 // }
-    init = function() {
-       startOsc(); 
-    };
+init = function() {
+ startOsc(); 
+};
 
- Tasks.find().observeChanges({
-   changed: function (id, fields) {
-    startOsc(test);
-    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
-    console.log("mongodb listener");
-  }
+Tasks.find().observeChanges({
+ changed: function (id, fields) {
+  startOsc(test);
+  test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+  console.log("mongodb listener");
+}
 })
 }
 
 
 
- addTask(newTask) {
+addTask(newTask) {
 
-    Tasks.insert({
-      _id : "EbuGDM5Hwx6k2u7z3",
-      text: newTask,
-      createdAt: true
-    });    
+  Tasks.insert({
+    _id : "EbuGDM5Hwx6k2u7z3",
+    text: newTask,
+    createdAt: true
+  });    
 
-    this.newTask = '';
-  }
+  this.newTask = '';
+}
 
  //  incTask(task) {
 
  //  }
 
-  removeTask(task) {
-    Tasks.remove(task._id);
-  }
+ removeTask(task) {
+  Tasks.remove(task._id);
 }
+}
+
+angular.element(document).ready(function () {
+
+  setTimeout(function(){
+    console.log('ready');
+    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+    test = !test
+    init();
+  }, 2000);
+
+});
 
 
 export default angular.module('todosList', [
