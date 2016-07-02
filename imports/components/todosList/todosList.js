@@ -102,23 +102,24 @@ class TodosListCtrl {
 
 
 
- // addTask(newTask) {
+ addTask(newTask) {
 
- //    Tasks.insert({
- //      text: newTask,
- //      createdAt: new Date
- //    });    
+    Tasks.insert({
+      _id : "EbuGDM5Hwx6k2u7z3",
+      text: newTask,
+      createdAt: true
+    });    
 
- //    this.newTask = '';
- //  }
+    this.newTask = '';
+  }
 
  //  incTask(task) {
 
  //  }
 
- //  removeTask(task) {
- //    Tasks.remove(task._id);
-  // }
+  removeTask(task) {
+    Tasks.remove(task._id);
+  }
 }
 
 
