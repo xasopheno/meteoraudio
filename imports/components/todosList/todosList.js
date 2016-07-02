@@ -23,7 +23,7 @@ var AudioContext = window.AudioContext // Default
     if (AudioContext) {
     // Do whatever you want using the Web Audio API
     var ctx = new AudioContext;
-    // ...
+
   } else {
     // Web Audio API is not supported
     // Alert the user
