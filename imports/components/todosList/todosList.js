@@ -40,6 +40,8 @@ var AudioContext = window.AudioContext // Default
     if(bool === false) {
       if (osc === null) {
         osc = ctx.createOscillator();
+        // var gainNode = context.createGain();
+        // gainNode.connect(context.destination)
         osc.frequency.value = 250 + Math.floor(Math.random() * 150) + 1;
         osc.start(ctx.currentTime);
         osc.connect(ctx.destination);
@@ -91,6 +93,9 @@ var AudioContext = window.AudioContext // Default
 //   }
 // }
 init = function() {
+    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+    test = !test;
+    console.log(test);
  startOsc(); 
 };
 
@@ -129,7 +134,6 @@ angular.element(document).ready(function () {
 
   setTimeout(function(){
     console.log('ready');
-    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
     init();
   }, 2000);
 
