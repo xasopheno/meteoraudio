@@ -10,8 +10,8 @@
 <h2>xoxo Meteor and WebAudio xoxo</h2>
 <ul>
   <li ng-repeat="task in $ctrl.tasks">
-    <button class="delete" ng-click="$ctrl.removeTask(task)">&times;</button>
- 
+    <!-- <button class="delete" ng-click="$ctrl.removeTask(task)">&times;</button>
+ --> 
 
   <button onclick="start()">start/stop</button>
 <!-- <button onclick="stop()">stop</button> -->
@@ -24,7 +24,7 @@
 <!--     <input type="checkbox" ng-checked="task.checked" ng-click="$ctrl.setChecked(task)" class="toggle-checked"/> -->
  
     <span class="text">
-      {{task.text}}
+      <!-- {{task.text}} -->
       {{task.createdAt}}
     </span>
   </li>

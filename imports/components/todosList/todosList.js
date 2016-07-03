@@ -130,7 +130,6 @@ angular.element(document).ready(function () {
   setTimeout(function(){
     console.log('ready');
     test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
-    test = !test
     init();
   }, 2000);
 
