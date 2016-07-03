@@ -30,28 +30,38 @@ var AudioContext = window.AudioContext // Default
     alert("Sorry, but the Web Audio API is not supported by your browser. Please, consider upgrading to the latest version or downloading Google Chrome or Mozilla Firefox");
   }
 
-  // var ctx = new AudioContext();
   var osc; 
-  var test; 
+  var gainNode;
+  // var test; 
   function startOsc(bool) {
     console.log('startOsc');
-    if(bool === undefined) bool = test;
+    bool = test;
     if(osc === undefined) osc = null;
     if(bool === false) {
       if (osc === null) {
         osc = ctx.createOscillator();
-        // var gainNode = context.createGain();
-        // gainNode.connect(context.destination)
+        gainNode = ctx.createGain();
         osc.frequency.value = 250 + Math.floor(Math.random() * 150) + 1;
+        osc.connect(gainNode);
+        gainNode.connect(ctx.destination);
         osc.start(ctx.currentTime);
-        osc.connect(ctx.destination);
+        // osc.connect(ctx.destination);
+        gainNode.gain.value = 0.0001;
+        gainNode.gain.setValueAtTime(gainNode.gain.value, ctx.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(1, ctx.currentTime + 0.05);
       }
     } else {
       if (osc != null) {
-        osc.stop(ctx.currentTime);
-        osc.disconnect(ctx.destination);
+           gainNode.gain.setValueAtTime(gainNode.gain.value, ctx.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.03);
+      setTimeout(function() {
+
+        osc.stop();
+        osc.disconnect(gainNode);
         osc = null;
-      }
+
+      }, 30);
+              }
     }
   }
   start = function() {
@@ -93,7 +103,7 @@ var AudioContext = window.AudioContext // Default
 //   }
 // }
 init = function() {
-    test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
+  test = Tasks.findOne({_id : "EbuGDM5Hwx6k2u7z3"}).createdAt;
     test = !test;
     console.log(test);
  startOsc(); 

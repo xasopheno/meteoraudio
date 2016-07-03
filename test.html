@@ -1,0 +1,31 @@
+<p><button class="button stop-button" id="3-stop-button"></button>
+<button class="button play-button" id="3-play-button"></button>
+<script>
+	var context = new AudioContext();
+	var oscillator;
+	var gainNode;
+	var thirdIsPlaying;
+	(function() {
+		document.getElementById('3-play-button').addEventListener('click', function() {
+			if(thirdIsPlaying) return;
+			gainNode = context.createGain();
+			oscillator = context.createOscillator();
+			oscillator.connect(gainNode);
+			gainNode.connect(context.destination);
+			oscillator.start();
+			gainNode.gain.value = 0.0001;
+			gainNode.gain.setValueAtTime(gainNode.gain.value, context.currentTime);
+			gainNode.gain.exponentialRampToValueAtTime(1, context.currentTime + 0.05);
+			thirdIsPlaying = true;
+		}, false);
+		document.getElementById('3-stop-button').addEventListener('click', function() {
+			if (!thirdIsPlaying) return;
+			gainNode.gain.setValueAtTime(gainNode.gain.value, context.currentTime);
+			gainNode.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + 0.03);
+			setTimeout(function() {
+				oscillator.stop();
+				thirdIsPlaying = false;
+			}, 30);
+		}, false);		
+	})();
+</script></p>
