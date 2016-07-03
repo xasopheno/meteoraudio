@@ -41,14 +41,14 @@ var AudioContext = window.AudioContext // Default
       if (osc === null) {
         osc = ctx.createOscillator();
         gainNode = ctx.createGain();
-        osc.frequency.value = 250 + Math.floor(Math.random() * 150) + 1;
+        osc.frequency.value = 200 + Math.floor(Math.random() * 400) + 1;
         osc.connect(gainNode);
         gainNode.connect(ctx.destination);
         osc.start(ctx.currentTime);
         // osc.connect(ctx.destination);
         gainNode.gain.value = 0.0001;
         gainNode.gain.setValueAtTime(gainNode.gain.value, ctx.currentTime);
-        gainNode.gain.exponentialRampToValueAtTime(1, ctx.currentTime + 0.05);
+        gainNode.gain.exponentialRampToValueAtTime(1, ctx.currentTime + 0.03);
       }
     } else {
       if (osc != null) {
